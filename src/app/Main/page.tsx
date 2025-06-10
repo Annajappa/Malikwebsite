@@ -6,7 +6,7 @@ import FAQSection from "../components/FAQSection";
 import { ServicesSection, ServiceCard } from "../components/ServicesSection";
 import TrustSection from "../components/TrustSection";
 import Testimonials from "../components/Testimonials";
-import BlogCard from "../components/Publications";
+import Publications from "../components/Publications";
 import InfoBanner from "../components/InfoBanner"; // Adjust path as necessary
 import image1 from "../assets/AboutImage.jpg";
 import image2 from "../assets/Publications-2.jpg";
@@ -65,7 +65,7 @@ const Main = () => {
       <h2 className="text-4xl font-semibold text-[#000000] text-center">Latest News & Publications</h2>
       <div className="space-y-10 mt-10">
   {publications.map((item) => (
-    <BlogCard key={item.id} {...item} />
+    <Publications key={item.id} {...item} />
   ))}
 </div>
 

@@ -6,15 +6,13 @@ export interface BlogCardProps {
   title: string;
   description: string;
   image: any;
-  buttonText: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({
+const Publications: React.FC<BlogCardProps> = ({
   id,
   title,
   description,
   image,
-  buttonText,
 }) => {
   const isEven = id % 2 === 0;
 
@@ -44,4 +42,4 @@ const BlogCard: React.FC<BlogCardProps> = ({
   );
 };
 
-export default BlogCard;
+export default Publications;
