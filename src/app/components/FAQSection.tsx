@@ -49,7 +49,6 @@ const FAQSection = () => {
 
   return (
     <section className="max-w-6xl mx-auto my-10 p-4 flex flex-col md:flex-row gap-6 font-poppins bg-white">
-      {/* Left Section */}
       <div ref={leftRef} className="md:w-1/2 space-y-6">
         <h2 className="text-4xl md:text-5xl text-gray-900">
           We have experts in a range of industries including:
@@ -58,7 +57,6 @@ const FAQSection = () => {
           Our expert team provides specialized accounting services to ensure
           compliance and optimize financial performance across various sectors.
         </p>
-
         <div className="space-y-3">
           {servicesData.map((item, index) => {
             const isActive = activeIndex === index;
