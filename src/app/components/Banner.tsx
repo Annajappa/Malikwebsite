@@ -5,7 +5,7 @@ import bannerImage from "../assets/Banner.jpg";
 
 export const Banner = () => {
   return (
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <div className="relative min-w-screen h-[500px] overflow-hidden">
       <Image
         src={bannerImage}
         alt="Banner Background"

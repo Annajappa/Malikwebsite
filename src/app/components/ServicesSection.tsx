@@ -28,7 +28,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 w-full px-4 sm:px-6 lg:px-12">
         {services.map((service, idx) => {
           const isGreen = (idx + 1) % 2 === 0;
 

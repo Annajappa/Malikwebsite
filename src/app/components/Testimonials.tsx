@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -32,48 +31,49 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#ffffff] py-12">
-      <h2 className="text-3xl font-semibold text-center text-[#000000] mb-10">
-        Testimonials
-      </h2>
-      <div className="flex flex-wrap justify-center gap-6 px-4">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className={`flex flex-col text-left rounded-2xl shadow-md p-6 w-full sm:w-[300px] lg:w-[350px] transition-transform hover:scale-105 ${
-              testimonial.highlight
-                ? "bg-[#B2DC18] text-white"
-                : "bg-white text-gray-900"
-            }`}
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-16 h-16 relative rounded-full">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  fill
-                  className="rounded-full object-cover"
-                />
-              </div>
-              </div>
-              <h3
-                className={`font-100 text-[25px] mb-3 ${
-                  testimonial.highlight ? "text-black" : "text-gray-900"
-                }`}
-              >
-                {testimonial.name}
-              </h3>
-            <p
-              className={`text-sm ${
-                testimonial.highlight ? "text-white" : "text-gray-700"
-              }`}
-            >
-              {testimonial.description}
-            </p>
+    <section className="bg-[#ffffff] py-12 px-4 w-full">
+  <h2 className="text-3xl font-semibold text-center text-[#000000] mb-10">
+    Testimonials
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+    {testimonials.map((testimonial, index) => (
+      <div
+        key={index}
+        className={`flex flex-col text-left rounded-2xl shadow-md p-6 w-full transition-transform hover:scale-105 ${
+          testimonial.highlight
+            ? "bg-[#B2DC18] text-white"
+            : "bg-white text-gray-900"
+        }`}
+      >
+        <div className="flex items-center gap-4 mb-4">
+          <div className="relative w-16 h-16 min-w-[64px] min-h-[64px] rounded-full overflow-hidden">
+            <Image
+              src={testimonial.image}
+              alt={testimonial.name}
+              fill
+              className="object-cover"
+            />
           </div>
-        ))}
+        </div>
+        <h3
+          className={`font-semibold text-[20px] mb-3 ${
+            testimonial.highlight ? "text-black" : "text-gray-900"
+          }`}
+        >
+          {testimonial.name}
+        </h3>
+        <p
+          className={`text-sm ${
+            testimonial.highlight ? "text-white" : "text-gray-700"
+          }`}
+        >
+          {testimonial.description}
+        </p>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
   );
 };
 

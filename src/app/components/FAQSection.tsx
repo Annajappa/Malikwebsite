@@ -48,8 +48,9 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto my-10 p-4 flex flex-col md:flex-row gap-6 font-poppins bg-white">
-      <div ref={leftRef} className="md:w-1/2 space-y-6">
+    <section className="w-full px-4 sm:px-6 lg:px-12 my-10 flex flex-col md:flex-row gap-6 font-poppins bg-white">
+      <div ref={leftRef} className="md:w-1/2 space-y-6 h-full">
+
         <h2 className="text-4xl md:text-5xl text-gray-900">
           We have experts in a range of industries including:
         </h2>
@@ -89,8 +90,9 @@ const FAQSection = () => {
       </div>
 
       {/* Right Section */}
-      <div ref={rightRef} className="md:w-1/2 flex items-stretch">
-        <div className="w-full ml-10 h-full rounded-xl overflow-hidden shadow-lg">
+      <div ref={rightRef} className="md:w-1/2 flex items-stretch h-full">
+  <div className="w-full ml-10 h-full rounded-xl overflow-hidden shadow-lg">
+
           <Image
             src={Banner}
             alt="Accounting Expert"

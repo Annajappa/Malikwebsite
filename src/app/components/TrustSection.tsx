@@ -21,7 +21,7 @@ const features = [
 const TrustSection = () => {
   return (
     <section className="bg-white py-12 px-6 md:px-16 lg:px-32">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div className="w-full flex flex-col md:flex-row items-center gap-10">
         <div className="flex-shrink-0 w-full md:w-1/2 rounded-lg shadow-lg overflow-hidden">
           <Image
             src={TrustImage}
@@ -40,6 +40,7 @@ const TrustSection = () => {
             are tailored to the unique needs of each client. We work as part of
             your team, understanding your needs and what matters to you.
           </p>
+
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-6 max-w-md">
             {features.map(({ label, icon, active }) => (
               <div key={label} className="flex items-center gap-3">

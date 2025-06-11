@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export interface BlogCardProps {
@@ -20,9 +19,8 @@ const Publications: React.FC<BlogCardProps> = ({
     <div
       className={`flex flex-col md:flex-row ${
         isEven ? "bg-[#B2DC18] text-white" : "bg-white text-black"
-      } ${
-        !isEven ? "md:flex-row-reverse" : ""
-      } rounded-2xl shadow w-full max-w-5xl mx-auto mb-10 p-6`}
+      } ${!isEven ? "md:flex-row-reverse" : ""}
+      rounded-2xl shadow w-full mb-10 p-6`}
     >
       <div className="w-full md:w-1/2 flex items-center justify-center p-4">
         <div className="w-full h-auto rounded-xl overflow-hidden">

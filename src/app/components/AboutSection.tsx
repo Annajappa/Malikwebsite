@@ -5,8 +5,8 @@ import aboutImage from "../assets/AboutImage.jpg";
 
 export const AboutSection = () => {
   return (
-    <section className="bg-[#f9f9f9] w-full py-16 px-6 md:px-24">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-[#f9f9f9] w-full py-16 overflow-hidden">
+      <div className="w-full flex flex-col md:flex-row items-center gap-12 px-6 md:px-24">
         <div className="flex-1">
           <p className="text-sm font-semibold text-gray-600 mb-2">Who We Are</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
@@ -24,13 +24,13 @@ export const AboutSection = () => {
         </div>
 
         <div className="flex-1">
-          <div className="rounded-xl overflow-hidden shadow-md">
+          <div className="w-full max-w-[600px] mx-auto rounded-xl overflow-hidden shadow-md">
             <Image
               src={aboutImage}
               alt="Financial expert teaching"
               width={600}
               height={400}
-              className="object-cover"
+              className="object-cover w-full h-auto"
             />
           </div>
         </div>
