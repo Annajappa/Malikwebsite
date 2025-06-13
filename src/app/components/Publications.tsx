@@ -36,7 +36,7 @@ const Publication: React.FC<PublicationProps> = ({
       <div className="w-full md:w-1/2 flex items-center justify-center p-4 md:ml-5">
         <div className="flex flex-col items-start">
           <h2 className="text-4xl mb-4">{title}</h2>
-          <p className="mb-6 text-base text-2xl">{description}</p>
+          <p className="mb-6 text-2xl">{description}</p>
         </div>
       </div>
     </div>
