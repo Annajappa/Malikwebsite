@@ -6,7 +6,7 @@ import FAQSection from "../components/FAQSection";
 import { ServicesSection, ServiceCard } from "../components/ServicesSection";
 import TrustSection from "../components/TrustSection";
 import Testimonials from "../components/Testimonials";
-import Publications from "../components/Publications";
+import Publication from "../components/Publications";
 import InfoBanner from "../components/InfoBanner"; // Adjust path as necessary
 import image1 from "../assets/AboutImage.jpg";
 import image2 from "../assets/Publications-2.jpg";
@@ -61,17 +61,17 @@ const Main = () => {
       <FAQSection />
       <TrustSection />
       <Testimonials />
-       <section className="py-16 px-4 bg-gray-50">
-      <h2 className="text-4xl font-semibold text-[#000000] text-center">Latest News & Publications</h2>
+       <section className="py-16 px-4">
+      <h2 className="text-4xl font-semibold text-[#000000] text-left md:text-center">Latest News & Publications</h2>
       <div className="space-y-10 mt-10">
   {publications.map((item) => (
-    <Publications key={item.id} {...item} />
+    <Publication key={item.id} {...item} />
   ))}
 </div>
 
       <div className="text-center mt-4">
         <button
-          className="bg-[#B2DC18] text-white font-medium px-6 py-2 rounded flex items-center gap-2 mx-auto"
+          className="bg-[#B2DC18] text-white font-medium px-6 py-2 rounded flex items-center gap-2 mx-auto cursor-pointer"
         >
           See More <span className="text-xl">→</span>
         </button>
