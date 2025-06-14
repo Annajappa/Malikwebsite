@@ -1,4 +1,6 @@
+// src/app/home/page.tsx or src/app/page.tsx
 "use client";
+
 import BlogCard from "../components/BlogCard";
 import Testimonial1 from "../assets/AboutImage.jpg";
 import Testimonial2 from "../assets/Frame 673.jpg";
@@ -55,7 +57,9 @@ const blogData = [
 export default function HomePage() {
   return (
     <div className="px-4 sm:px-6 lg:px-12 py-10 w-full">
-      <h2 className="text-center text-4xl font-semibold mb-10 text-black">Blog</h2>
+      <h2 className="text-center text-4xl font-semibold mb-10 text-black">
+        Blog
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         {blogData.map((card, index) => (
           <BlogCard key={index} index={index} {...card} />
